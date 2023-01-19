@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+    
+  .visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  .container {
+    overflow: hidden;
+    padding: 0rem;
+    margin-top: 0rem;
+    background: rgba(21, 21, 21, 0.1)
+
+  }
+  
+  .card-carousel {
+    --card-width: 50%;
+    --card-max-width: 380px;
+    --card-height: 450px;
+    --carousel-min-width: 700px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url(./Profile-pics/beard-man.jpg);
+  }
+   
+  .card:nth-of-type(2) .image-container {
+    background-image: url(./Profile-pics/Glasses-boy.jpg)
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url(./Profile-pics/Glasses-girl.jpg)
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url(./Profile-pics/normal-hair-girl.jpg)
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url(./Profile-pics/normal\ hear\ guy.jpg)
+  }
+  
+  .image-container {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 3em;
+    border-radius: 200%;
+    padding: 5em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px rgba(0,0,0,.1);
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+  
+  .image-container p {
+    padding: 10em;
+    margin-top: 10em;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    color: white;
+    border-radius: .2em;
+    display: inline-block;
+    transform: translateX(calc((100vw - 100%) / 2))
+  }
+  
+
+
+
+
+
+/*font-family: 'Noto Serif NP Hmong', serif;  400px.*/
+body{
+    font-family: 'Noto Serif NP Hmong', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: white;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 2.5rem;
+}
+
+.logo{
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.25rem!important;
+    transform: translate(-50%, -50%) scale(5);
+}
+
+.first-page {
+    height: 100vh;
+    background: rgb(22, 22, 22) ;
+    color: white;
+    display: flex; 
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-around; 
+    border: 3px red;
+}
+
+.first-page img{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    z-index: 0;
+}
+
+.home {
+    height: 100vh;
+}
+
+.intro{
+    width: 40%;
+    z-index: 0;
+
+}
+
+.intro a {
+    color: rgb(37, 109, 253);
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-left: 0rem;
+    position: absolute;
+}
+
+.first-page img {
+    height: 100%;
+}
+
+.sliding-text{
+    padding: 1rem, 3rem!important;
+    display: flex!important;
+    position: relative!important;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*font-family: 'Noto Serif NP Hmong', serif;  400px.*/
+body{
+    font-family: 'Noto Serif NP Hmong', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: rgb(255, 255, 255);
+}
+
+h2{
+    font-size: 3rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 2.5rem;
+}
+
+.sliding-text{
+    padding: 1rem, 3rem!important;
+    display: flex!important;
+    position: relative!important;
+}
+
+.logo{
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.25rem!important;
+    transform: translate(-50%, -50%) scale(5);
+}
+
+.first-page {
+    height: 100vh;
+    background: rgb(22, 22, 22) ;
+    color: white;
+    display: flex; 
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-around; 
+    border: 3px red;
+}
+
+.first-page img{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.home {
+    height: 100vh;
+}
+
+.intro{
+    border: 1px red;
+}
+
+.intro a {
+    color: rgb(37, 109, 253);
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-left: 0rem;
+    position: absolute;
+}
+
+.first-page img {
+    height: 100%;
+}
+
+
+
+
+

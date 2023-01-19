@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Gemeente-Deventer",
+		"liveServer.settings.port": 5501
+	}
+}
